@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- tela2 strings -->
+
+	<string name="app_name">Page 2</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="nome_da_moeda_string">Nome da Moeda</string>
+	<string name="digite_o_valor_que_deseja_converter__string">Digite o valor que deseja converter:</string>
+	<string name="valor_convertido__string">Valor convertido:</string>
+	<string name="r_20_000_00_string">R$20.000.00</string>
+</resources>

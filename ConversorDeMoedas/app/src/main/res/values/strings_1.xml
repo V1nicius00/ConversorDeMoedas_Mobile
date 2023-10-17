@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- tela1 strings -->
+
+	<string name="app_name">Page 1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="conversor_de_moedas_string">Conversor de Moedas</string>
+	<string name="moedas_mais_populares__string">Moedas mais populares:</string>
+	<string name="usd_string">USD</string>
+	<string name="r_4_99_string">R$4,99</string>
+	<string name="gbp_string">GBP</string>
+	<string name="r_6_35_string">R$6,35</string>
+	<string name="eur_string">EUR</string>
+	<string name="r_5_34_string">R$5,34</string>
+	<string name="selecione_a_moeda_que_deseja_converter_string">Selecione a moeda que deseja converter</string>
+	<string name="d_lar_americano__usd__string">Dlar Americano (USD)</string>
+	<string name="euro__eur__string">Euro(EUR)</string>
+	<string name="yene__jpy__string">Yene(JPY)</string>
+	<string name="libra_esterlina__gbp__string">Libra Esterlina(GBP)</string>
+	<string name="d_lar_australiano__aud_nzd__string">Dlar Australiano(AUD/NZD)</string>
+	<string name="d_lar_canadense__cad__string">Dlar Canadense (CAD)</string>
+	<string name="yuan__cny__string">Yuan(CNY)</string>
+	<string name="peso_argentino__ars__string">Peso Argentino(ARS)</string>
+</resources>

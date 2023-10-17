@@ -1,0 +1,148 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		tela2
+	 *	@date 		Tuesday 17th of October 2023 11:53:04 AM
+	 *	@title 		Page 2
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/tela2" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+
+
+			<RelativeLayout android:id="@+id/page_tela2_ek1"
+				android:layout_marginTop="0dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<View   android:id="@+id/_bg__tela2_ek2"
+					android:background="@drawable/_bg__tela2_ek2_shape"
+					 android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:layout_width="360dp"
+					android:layout_height="640dp" />
+
+				<TextView android:id="@+id/nome_da_moeda"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textSize="28sp"
+					android:textColor="@color/nome_da_moeda_color"
+					android:layout_marginLeft="13.52dp"
+					android:layout_marginTop="10.52dp"
+					android:layout_width="330dp"
+					android:layout_height="56.8dp"
+					android:text="@string/nome_da_moeda_string"
+					 />
+
+				<ImageView android:id="@+id/line_4"
+					android:src="@drawable/line_4"
+					android:contentDescription="line_4"
+					 android:layout_marginStart="-0.48dp"
+					android:layout_marginTop="48.52dp"
+					android:layout_width="360dp"
+					android:layout_height="0.48dp" />
+
+				<TextView android:id="@+id/digite_o_valor_que_deseja_converter_"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textSize="20sp"
+					android:textColor="@color/nome_da_moeda_color"
+					android:layout_marginLeft="12dp"
+					android:layout_marginTop="99dp"
+					android:layout_width="338dp"
+					android:layout_height="54dp"
+					android:text="@string/digite_o_valor_que_deseja_converter__string"
+					 />
+
+				<ImageView android:id="@+id/arrow_3"
+					android:src="@drawable/arrow_3"
+					android:contentDescription="arrow_3"
+					 android:layout_marginStart="146.66dp"
+					android:layout_marginTop="235.66dp"
+					android:layout_width="24.57dp"
+					android:layout_height="55.04dp" />
+
+				<ImageView android:id="@+id/arrow_3_ek1"
+					android:src="@drawable/arrow_3_ek1"
+					android:contentDescription="arrow_3_ek1"
+					 android:layout_marginStart="175.66dp"
+					android:layout_marginTop="235.66dp"
+					android:layout_width="24.57dp"
+					android:layout_height="55.04dp" />
+
+				<TextView android:id="@+id/valor_convertido_"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textSize="20sp"
+					android:textColor="@color/nome_da_moeda_color"
+					android:layout_marginLeft="64dp"
+					android:layout_marginTop="318dp"
+					android:layout_width="234dp"
+					android:layout_height="38dp"
+					android:text="@string/valor_convertido__string"
+					 />
+
+				<ImageView android:id="@+id/home"
+					android:src="@drawable/home"
+					android:contentDescription="home"
+					 android:layout_marginStart="7dp"
+					android:layout_marginTop="585dp"
+					android:layout_width="42.89dp"
+					android:layout_height="42.89dp" />
+
+				<ImageView android:id="@+id/settings"
+					android:src="@drawable/settings"
+					android:contentDescription="settings"
+					 android:layout_marginStart="303dp"
+					android:layout_marginTop="585dp"
+					android:layout_width="42.89dp"
+					android:layout_height="42.89dp" />
+
+				<View   android:id="@+id/rectangle_32"
+					android:background="@drawable/rectangle_32_shape"
+					 android:layout_marginStart="31dp"
+					android:layout_marginTop="158dp"
+					android:layout_width="299dp"
+					android:layout_height="57dp" />
+
+				<View   android:id="@+id/rectangle_33"
+					android:background="@drawable/rectangle_33_shape"
+					 android:layout_marginStart="28dp"
+					android:layout_marginTop="358dp"
+					android:layout_width="299dp"
+					android:layout_height="57dp" />
+
+				<TextView android:id="@+id/r_20_000_00"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textSize="38sp"
+					android:textColor="@color/nome_da_moeda_color"
+					android:layout_marginLeft="44dp"
+					android:layout_marginTop="365dp"
+					android:layout_width="262dp"
+					android:layout_height="55.8dp"
+					android:text="@string/r_20_000_00_string"
+					 />
+
+			</RelativeLayout>
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>
