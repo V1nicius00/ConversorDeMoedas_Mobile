@@ -11,11 +11,11 @@
     <string name="d_lar_americano__usd__string">Dolar Americano (USD)</string>
     <string name="euro__eur__string">Euro(EUR)</string>
     <string name="yene__jpy__string">Yene(JPY)</string>
-    <string name="libra_esterlina__gbp__string">Libra Esterlina(GBP)</string>
-    <string name="d_lar_australiano__aud_nzd__string">Dolar Australiano(AUD/NZD)</string>
+    <string name="libra_esterlina__gbp__string">Libra Esterlina (GBP)</string>
+    <string name="d_lar_australiano__aud_nzd__string">Dolar Australiano (AUD/NZD)</string>
     <string name="d_lar_canadense__cad__string">Dolar Canadense (CAD)</string>
     <string name="yuan__cny__string">Yuan(CNY)</string>
-    <string name="peso_argentino__ars__string">Peso Argentino(ARS)</string>
+    <string name="peso_argentino__ars__string">Peso Argentino (ARS)</string>
     <string name="nome_da_moeda_string">Nome da Moeda</string>
     <string name="digite_o_valor_que_deseja_converter__string">Digite o valor que deseja converter:</string>
     <string name="valor_convertido__string">Valor convertido:</string>

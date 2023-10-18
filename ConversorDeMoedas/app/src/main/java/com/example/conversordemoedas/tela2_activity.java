@@ -46,20 +46,16 @@ public class tela2_activity extends Activity {
 		
 		_bg__tela2_ek2 = (View) findViewById(R.id._bg__tela2_ek2);
 		nome_da_moeda = (TextView) findViewById(R.id.nome_da_moeda);
-		line_4 = (ImageView) findViewById(R.id.line_4);
 		digite_o_valor_que_deseja_converter_ = (TextView) findViewById(R.id.digite_o_valor_que_deseja_converter_);
 		arrow_3 = (ImageView) findViewById(R.id.arrow_3);
 		arrow_3_ek1 = (ImageView) findViewById(R.id.arrow_3_ek1);
 		valor_convertido_ = (TextView) findViewById(R.id.valor_convertido_);
-		home = (ImageView) findViewById(R.id.home);
+		home = (ImageView) findViewById(R.id.homee);
 		settings = (ImageView) findViewById(R.id.settings);
 		rectangle_32 = (View) findViewById(R.id.rectangle_32);
 		rectangle_33 = (View) findViewById(R.id.rectangle_33);
 		r_20_000_00 = (TextView) findViewById(R.id.r_20_000_00);
-	
-		
-		//custom code goes here
-	
+
 	}
 }
 	
