@@ -15,6 +15,7 @@ package com.example.conversordemoedas;
 	 */
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -56,7 +57,31 @@ public class tela2_activity extends Activity {
 		rectangle_33 = (View) findViewById(R.id.rectangle_33);
 		r_20_000_00 = (TextView) findViewById(R.id.r_20_000_00);
 
+		//Botão home
+		home.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				IrParaHome();
+			}
+		});
+
+		// Botão settings
+		settings.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View v) { TelaConfiguracao(); }
+		});
+
 	}
+
+		private void TelaConfiguracao() {
+			Intent telaConfiguracao = new Intent(this, tela3_activity.class);
+			startActivity(telaConfiguracao);
+		}
+
+		private void IrParaHome() {
+			Intent telaHome = new Intent(this, tela1_activity.class);
+			startActivity(telaHome);
+		}
 }
 	
 	
