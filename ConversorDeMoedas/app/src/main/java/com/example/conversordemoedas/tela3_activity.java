@@ -41,17 +41,10 @@ public class tela3_activity extends Activity {
 		rectangle_30 = (View) findViewById(R.id.rectangle_30);
 		tema = (TextView) findViewById(R.id.tema);
 		rectangle_31 = (View) findViewById(R.id.rectangle_31);
-		rectangle_21 = (View) findViewById(R.id.rectangle_21);
-		ellipse_1 = (View) findViewById(R.id.ellipse_1);
 		portugu_s___br = (TextView) findViewById(R.id.portugu_s___br);
 		escuro = (TextView) findViewById(R.id.escuro);
 
 	}
-
-		public void TelaConfiguracao(View v) {
-			Intent telaConfiguracao = new Intent(this, tela3_activity.class);
-			startActivity(telaConfiguracao);
-		}
 
 		public void IrParaHome(View v) {
 			Intent telaHome = new Intent(this, tela1_activity.class);

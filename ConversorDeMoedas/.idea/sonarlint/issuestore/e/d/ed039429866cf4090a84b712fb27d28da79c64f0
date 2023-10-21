@@ -1,0 +1,44 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(åÆÖ©8†ôùû´1
+u	java:S116"YRename this field "_bg__tela2_ek2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ–²¦8ôùû´1
+y	java:S116"XRename this field "nome_da_moeda" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…‡óŸüÿÿÿÿ8ôùû´1
+r	java:S116"QRename this field "line_4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¡®‡ÿÿÿÿÿ8ôùû´1
+	java:S116"oRename this field "digite_o_valor_que_deseja_converter_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÚÏºúÿÿÿÿ8ôùû´1
+n	java:S116"RRename this field "arrow_3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¹‡„8ôùû´1
+w	java:S116"VRename this field "arrow_3_ek1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û§¼ùÿÿÿÿ8ôùû´1
+}	java:S116"\Rename this field "valor_convertido_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÅà«ùÿÿÿÿ8ôùû´1
+x	java:S116"WRename this field "rectangle_32" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É‡ƒûÿÿÿÿ8ôùû´1
+s	java:S116"WRename this field "rectangle_33" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒà÷®8ôùû´1
+r	java:S116"VRename this field "r_20_000_00" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û‘“ş8ôùû´1
+z
+java:S1450"]Remove the "_bg__tela2_ek2" field and declare it as a local variable in the relevant methods.(œ–²¦8”ôùû´1
+s
+java:S1450"VRemove the "arrow_3" field and declare it as a local variable in the relevant methods.(¯¹‡„8•ôùû´1
+|
+java:S1450"ZRemove the "arrow_3_ek1" field and declare it as a local variable in the relevant methods.(û§¼ùÿÿÿÿ8•ôùû´1
+•
+java:S1450"sRemove the "digite_o_valor_que_deseja_converter_" field and declare it as a local variable in the relevant methods.(ŠÚÏºúÿÿÿÿ8•ôùû´1
+p
+java:S1450"SRemove the "home" field and declare it as a local variable in the relevant methods.(ƒäÆª8•ôùû´1
+~
+java:S1450"\Remove the "nome_da_moeda" field and declare it as a local variable in the relevant methods.(…‡óŸüÿÿÿÿ8•ôùû´1
+w
+java:S1450"ZRemove the "r_20_000_00" field and declare it as a local variable in the relevant methods.(Û‘“ş8–ôùû´1
+}
+java:S1450"[Remove the "rectangle_32" field and declare it as a local variable in the relevant methods.(É‡ƒûÿÿÿÿ8–ôùû´1
+x
+java:S1450"[Remove the "rectangle_33" field and declare it as a local variable in the relevant methods.(ƒà÷®8–ôùû´1
+y
+java:S1450"WRemove the "settings" field and declare it as a local variable in the relevant methods.(Å›Ù÷şÿÿÿÿ8–ôùû´1
+‚
+java:S1450"`Remove the "valor_convertido_" field and declare it as a local variable in the relevant methods.(ĞÅà«ùÿÿÿÿ8–ôùû´1
+j	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’®†±8Ÿôùû´1
+E
+java:S11724"(Remove this unused method parameter "v".(’®†±8Ÿôùû´1
+j	java:S1009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶¦Á¼8¦ôùû´1
+E
+java:S11729"(Remove this unused method parameter "v".(¶¦Á¼8¦ôùû´1
+L
+java:S1068"*Remove this unused "line_4" private field.(ò¡®‡ÿÿÿÿÿ8§ôùû´1
+E
+java:S1068"(Remove this unused "home" private field.(ƒäÆª8§ôùû´1

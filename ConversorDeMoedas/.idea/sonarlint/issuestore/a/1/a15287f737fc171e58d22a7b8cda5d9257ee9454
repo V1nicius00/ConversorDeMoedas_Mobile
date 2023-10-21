@@ -1,0 +1,41 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ã¬
+n	java:S116"YRename this field "_bg__tela3_ek2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Ç±Ÿ
+r	java:S116"XRename this field "configura__es" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜¤È¼ûÿÿÿÿ
+k	java:S116"QRename this field "line_4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¡®‡ÿÿÿÿÿ
+k	java:S116"WRename this field "rectangle_30" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÒÂ#
+l	java:S116"WRename this field "rectangle_31" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¤½›
+q	java:S116"WRename this field "rectangle_21" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦áœàúÿÿÿÿ
+n	java:S116"TRename this field "ellipse_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ÜóÏøÿÿÿÿ
+s	java:S116"YRename this field "portugu_s___br" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Î‘¼øÿÿÿÿ
+s
+java:S1450"]Remove the "_bg__tela3_ek2" field and declare it as a local variable in the relevant methods.(•Ç±Ÿ
+w
+java:S1450"\Remove the "configura__es" field and declare it as a local variable in the relevant methods.(˜¤È¼ûÿÿÿÿ
+k
+java:S1450"URemove the "escuro" field and declare it as a local variable in the relevant methods.(¸Í®¥
+i
+java:S1450"SRemove the "home" field and declare it as a local variable in the relevant methods.(ƒäÆª
+j
+java:S1450"URemove the "idioma" field and declare it as a local variable in the relevant methods.(­ËµK
+x
+java:S1450"]Remove the "portugu_s___br" field and declare it as a local variable in the relevant methods.(¬Î‘¼øÿÿÿÿ
+p
+java:S1450"[Remove the "rectangle_30" field and declare it as a local variable in the relevant methods.(ÖÒÂ#
+q
+java:S1450"[Remove the "rectangle_31" field and declare it as a local variable in the relevant methods.(¦¤½›
+r
+java:S1450"WRemove the "settings" field and declare it as a local variable in the relevant methods.(Å›Ù÷şÿÿÿÿ
+n
+java:S1450"SRemove the "tema" field and declare it as a local variable in the relevant methods.(øİ¬¡øÿÿÿÿ
+c	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶¦Á¼
+E
+java:S11721"(Remove this unused method parameter "v".(¶¦Á¼8Âõ„ü´1
+E
+java:S1068"*Remove this unused "line_4" private field.(ò¡®‡ÿÿÿÿÿ
+E
+java:S1068"(Remove this unused "home" private field.(ƒäÆª8ğ™„ü´1
+R
+java:S1068"0Remove this unused "rectangle_21" private field.(¦áœàúÿÿÿÿ8…â“ı´1
+O
+java:S1068"-Remove this unused "ellipse_1" private field.(¹ÜóÏøÿÿÿÿ8…â“ı´1

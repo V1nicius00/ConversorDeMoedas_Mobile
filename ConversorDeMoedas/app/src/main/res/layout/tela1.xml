@@ -356,16 +356,8 @@
 					android:layout_marginStart="318dp"
 					android:layout_marginTop="599dp"
 					android:contentDescription="settings"
+					android:onClick="TelaConfiguracao"
 					android:src="@drawable/settings" />
-
-				<ImageView
-					android:id="@+id/homee"
-					android:layout_width="35dp"
-					android:layout_height="35dp"
-					android:layout_marginStart="7dp"
-					android:layout_marginTop="599dp"
-					android:contentDescription="home"
-					android:src="@drawable/home" />
 
 			</RelativeLayout>
 		</RelativeLayout>

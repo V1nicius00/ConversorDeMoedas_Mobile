@@ -1,4 +1,6 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent" android:layout_height="wrap_content" >
 	<!-- 
 	/*
@@ -111,12 +113,24 @@
 					android:onClick="TelaConfiguracao"
 					android:src="@drawable/settings" />
 
-				<View   android:id="@+id/rectangle_32"
-					android:background="@drawable/rectangle_32_shape"
-					 android:layout_marginStart="31dp"
+				<View
+					android:id="@+id/rectangle_32"
+					android:layout_width="250dp"
+					android:layout_height="57dp"
+					android:layout_marginStart="31dp"
 					android:layout_marginTop="158dp"
-					android:layout_width="299dp"
-					android:layout_height="57dp" />
+					android:background="@drawable/rectangle_32_shape" />
+
+				<EditText
+					android:id="@+id/txt_converter"
+					android:layout_width="230dp"
+					android:layout_height="46dp"
+					android:layout_marginLeft="42dp"
+					android:layout_marginTop="165dp"
+					android:ems="10"
+					android:gravity="center"
+					android:hint="Ex: 400"
+					android:inputType="numberDecimal" />
 
 				<View   android:id="@+id/rectangle_33"
 					android:background="@drawable/rectangle_33_shape"
@@ -125,17 +139,25 @@
 					android:layout_width="299dp"
 					android:layout_height="57dp" />
 
-				<TextView android:id="@+id/r_20_000_00"
-					android:layout_gravity="center_horizontal|center"
-					android:gravity="center"
-					android:textSize="38sp"
-					android:textColor="@color/nome_da_moeda_color"
-					android:layout_marginLeft="44dp"
-					android:layout_marginTop="365dp"
+				<TextView
+					android:id="@+id/r_20_000_00"
 					android:layout_width="262dp"
 					android:layout_height="55.8dp"
-					android:text="@string/r_20_000_00_string"
-					 />
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginLeft="44dp"
+					android:layout_marginTop="365dp"
+					android:gravity="center"
+					android:hint="..."
+					android:textColor="@color/nome_da_moeda_color"
+					android:textSize="38sp" />
+
+				<Button
+					android:id="@+id/btnConverter"
+					android:layout_width="63dp"
+					android:layout_height="65dp"
+					android:layout_marginStart="285dp"
+					android:layout_marginTop="155dp"
+					android:text="OK" />
 
 			</RelativeLayout>
 		</RelativeLayout>

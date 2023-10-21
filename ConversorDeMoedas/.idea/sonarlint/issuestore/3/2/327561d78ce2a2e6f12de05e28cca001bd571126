@@ -1,0 +1,38 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­¯Öö8Üâû´1
+y
+java:S1450"\Remove the "btnAUTRALIANO" field and declare it as a local variable in the relevant methods.(Éôöœ8ôâû´1
+x
+java:S1450"[Remove the "btnCANADENSE" field and declare it as a local variable in the relevant methods.(ş½Ê×8ôâû´1
+x
+java:S1450"VRemove the "btnEURO" field and declare it as a local variable in the relevant methods.(«©ÖÑıÿÿÿÿ8õâû´1
+t
+java:S1450"WRemove the "btnLIBRA" field and declare it as a local variable in the relevant methods.(ğ‡Œé8õâû´1
+x
+java:S1450"VRemove the "btnPESO" field and declare it as a local variable in the relevant methods.(Ôˆùıùÿÿÿÿ8õâû´1
+r
+java:S1450"URemove the "btnUSD" field and declare it as a local variable in the relevant methods.(š¼óñ8õâû´1
+s
+java:S1450"VRemove the "btnYENE" field and declare it as a local variable in the relevant methods.(¶ÁÀ8õâû´1
+s
+java:S1450"VRemove the "btnYUAN" field and declare it as a local variable in the relevant methods.(Ê®ïö8õâû´1
+p
+java:S1450"SRemove the "home" field and declare it as a local variable in the relevant methods.(ƒäÆª8õâû´1
+y
+java:S1450"WRemove the "settings" field and declare it as a local variable in the relevant methods.(Å›Ù÷şÿÿÿÿ8÷âû´1
+{
+java:S1450"YRemove the "valorDolar" field and declare it as a local variable in the relevant methods.(ŠÅ›€ûÿÿÿÿ8÷âû´1
+z
+java:S1450"XRemove the "valorEuro" field and declare it as a local variable in the relevant methods.(©×Íùÿÿÿÿ8øâû´1
+v
+java:S1450"YRemove the "valorLibra" field and declare it as a local variable in the relevant methods.(ãØ¦Ô8øâû´1
+j	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’®†±8†Ÿâû´1
+E
+java:S11724"(Remove this unused method parameter "v".(’®†±8ˆŸâû´1
+o	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ‚ŸÏüÿÿÿÿ8’Ÿâû´1
+J
+java:S11728"(Remove this unused method parameter "v".(œ‚ŸÏüÿÿÿÿ8“Ÿâû´1
+N
+java:S1068"1Remove this unused "btnAUTRALIANO" private field.(Éôöœ8›Ÿâû´1
+E
+java:S1068"(Remove this unused "home" private field.(ƒäÆª8›Ÿâû´1

@@ -58,10 +58,6 @@ public class tela1_activity extends Activity {
 		startActivity(telaConversao);
 	}
 
-	public void TelaHome (View v){
-		Intent telaHome = new Intent(this, tela1_activity.class);
-		startActivity(telaHome);
-	}
 }
 
 	
