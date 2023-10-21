@@ -187,7 +187,8 @@
 					android:layout_height="55dp"
 					android:layout_marginStart="19dp"
 					android:layout_marginTop="345dp"
-					android:background="@drawable/rectangle_22_shape" />
+					android:background="@drawable/rectangle_22_shape"
+					android:onClick="TelaConversao" />
 
 				<TextView
 					android:id="@+id/txtUSD"
@@ -207,7 +208,8 @@
 					android:layout_height="55dp"
 					android:layout_marginStart="191dp"
 					android:layout_marginTop="345dp"
-					android:background="@drawable/rectangle_23_shape" />
+					android:background="@drawable/rectangle_23_shape"
+					android:onClick="TelaConversao" />
 
 				<TextView
 					android:id="@+id/txtEURO"
@@ -227,7 +229,8 @@
 					android:layout_height="55dp"
 					android:layout_marginStart="19dp"
 					android:layout_marginTop="407dp"
-					android:background="@drawable/rectangle_24_shape" />
+					android:background="@drawable/rectangle_24_shape"
+					android:onClick="TelaConversao" />
 
 				<TextView
 					android:id="@+id/txtYENE"
@@ -247,7 +250,8 @@
 					android:layout_height="55dp"
 					android:layout_marginStart="191dp"
 					android:layout_marginTop="407dp"
-					android:background="@drawable/rectangle_25_shape" />
+					android:background="@drawable/rectangle_25_shape"
+					android:onClick="TelaConversao" />
 
 				<TextView
 					android:id="@+id/txtLIBRA"
@@ -267,7 +271,8 @@
 					android:layout_height="55dp"
 					android:layout_marginStart="19dp"
 					android:layout_marginTop="469dp"
-					android:background="@drawable/rectangle_26_shape" />
+					android:background="@drawable/rectangle_26_shape"
+					android:onClick="TelaConversao" />
 
 				<TextView
 					android:id="@+id/txtAUSTRALIANO"
@@ -287,7 +292,8 @@
 					android:layout_height="55dp"
 					android:layout_marginStart="191dp"
 					android:layout_marginTop="469dp"
-					android:background="@drawable/rectangle_27_shape" />
+					android:background="@drawable/rectangle_27_shape"
+					android:onClick="TelaConversao" />
 
 				<TextView
 					android:id="@+id/txtCANADENSE"
@@ -307,7 +313,8 @@
 					android:layout_height="55dp"
 					android:layout_marginStart="19dp"
 					android:layout_marginTop="531dp"
-					android:background="@drawable/rectangle_28_shape" />
+					android:background="@drawable/rectangle_28_shape"
+					android:onClick="TelaConversao" />
 
 				<TextView
 					android:id="@+id/txtYUAN"
@@ -327,7 +334,8 @@
 					android:layout_height="55dp"
 					android:layout_marginStart="191dp"
 					android:layout_marginTop="531dp"
-					android:background="@drawable/rectangle_29_shape" />
+					android:background="@drawable/rectangle_29_shape"
+					android:onClick="TelaConversao" />
 
 				<TextView
 					android:id="@+id/txtPESO"

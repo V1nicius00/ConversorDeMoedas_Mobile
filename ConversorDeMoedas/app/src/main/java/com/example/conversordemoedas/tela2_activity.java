@@ -1,19 +1,5 @@
 package com.example.conversordemoedas;
 
-/*
-	 *	This content is generated from the API File Info.
-	 *	(Alt+Shift+Ctrl+I).
-	 *
-	 *	@desc 		
-	 *	@file 		tela2
-	 *	@date 		Tuesday 17th of October 2023 11:53:04 AM
-	 *	@title 		Page 2
-	 *	@author 	
-	 *	@keywords 	
-	 *	@generator 	Export Kit v1.3.figma
-	 *
-	 */
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -57,28 +43,18 @@ public class tela2_activity extends Activity {
 		rectangle_33 = (View) findViewById(R.id.rectangle_33);
 		r_20_000_00 = (TextView) findViewById(R.id.r_20_000_00);
 
-		//Botão home
-		home.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				IrParaHome();
-			}
-		});
-
-		// Botão settings
-		settings.setOnClickListener(new View.OnClickListener(){
-			@Override
-			public void onClick(View v) { TelaConfiguracao(); }
-		});
-
 	}
 
-		private void TelaConfiguracao() {
+	/*
+	As Intents (Intenção) são fora do metodo OnCreate e sempre vão receber uma View como parametro,
+	Elas precisam ser publicas para serem acessadas no xml pelo OnClick
+	 */
+		public void TelaConfiguracao(View v) {
 			Intent telaConfiguracao = new Intent(this, tela3_activity.class);
 			startActivity(telaConfiguracao);
 		}
 
-		private void IrParaHome() {
+		public void IrParaHome(View v) {
 			Intent telaHome = new Intent(this, tela1_activity.class);
 			startActivity(telaHome);
 		}

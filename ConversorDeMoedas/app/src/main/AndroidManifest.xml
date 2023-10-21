@@ -20,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.conversordemoedas.tela1_activity" />
+        <activity android:name="com.example.conversordemoedas.tela2_activity" />
+        <activity android:name="com.example.conversordemoedas.tela3_activity" />
     </application>
 
 </manifest>

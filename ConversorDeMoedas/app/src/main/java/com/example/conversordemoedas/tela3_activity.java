@@ -46,28 +46,14 @@ public class tela3_activity extends Activity {
 		portugu_s___br = (TextView) findViewById(R.id.portugu_s___br);
 		escuro = (TextView) findViewById(R.id.escuro);
 
-		//Botão home
-		home.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				IrParaHome();
-			}
-		});
-
-		// Botão settings
-		settings.setOnClickListener(new View.OnClickListener(){
-			@Override
-			public void onClick(View v) { TelaConfiguracao(); }
-		});
-
 	}
 
-		private void TelaConfiguracao() {
+		public void TelaConfiguracao(View v) {
 			Intent telaConfiguracao = new Intent(this, tela3_activity.class);
 			startActivity(telaConfiguracao);
 		}
 
-		private void IrParaHome() {
+		public void IrParaHome(View v) {
 			Intent telaHome = new Intent(this, tela1_activity.class);
 			startActivity(telaHome);
 		}
