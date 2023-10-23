@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 public class tela2_activity extends Activity {
 
-	private EditText valorConverter;
-	private TextView valorConvertido;
+	 EditText valorConverter;
+	 TextView valorConvertido;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,10 +22,6 @@ public class tela2_activity extends Activity {
 		valorConvertido = (TextView) findViewById(R.id.valorConvertido);
 	}
 
-	/*
-	As Intents (Intenção) são fora do metodo OnCreate e sempre vão receber uma View como parametro,
-	Elas precisam ser publicas para serem acessadas no xml pelo OnClick
-	 */
 		public void TelaConfiguracao(View v) {
 			Intent telaConfiguracao = new Intent(this, tela3_activity.class);
 			startActivity(telaConfiguracao);
@@ -36,23 +32,29 @@ public class tela2_activity extends Activity {
 			startActivity(telaHome);
 		}
 
-		Intent intent = getIntent();
-		String tipoDeMoedaSelecionada = intent.getStringExtra("tipoMoedaSelecionada");
-
-	public void operacao(double valor, String moeda){
-		double valorConvertidoDouble;
-		valorConvertidoDouble = ConversorDeMoedas.converterParaReal(valor, moeda);
-		String valorConvertidoStr = String.valueOf(valorConvertido);
-		valorConvertido.setText(valorConvertidoStr);
-
-	}
 
 	public void converter(View v){
+		Intent intent = getIntent();
+		String tipoDeMoedaSelecionada = intent.getStringExtra("tipoMoedaSelecionada");
+		//TENHO A MOEDA A SER CONVERTIDA
+
 		String txtValor = valorConverter.getText().toString();
 		double valorEmDouble = Double.parseDouble(txtValor);
-		operacao(valorEmDouble, tipoDeMoedaSelecionada);
+		//TENHO O VALOR
+
+		double conversao = ConversorDeMoedas.converterParaReal(valorEmDouble, tipoDeMoedaSelecionada);
+		String valorConvertidoStr = String.valueOf(conversao);
+		//REALIZO A CONVERSÃO
+
+		valorConvertido.setText(valorConvertidoStr);
+		//INSIRO O VALOR CONVERTIDO NO CAMPO
 	}
 
+	public void teste(View v){
+		Intent intent = getIntent();
+		String tipoDeMoedaSelecionada = intent.getStringExtra("tipoMoedaSelecionada");
+		valorConvertido.setText (tipoDeMoedaSelecionada);
+	}
 }
 	
 	
