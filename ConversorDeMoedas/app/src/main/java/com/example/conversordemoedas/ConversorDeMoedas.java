@@ -14,10 +14,10 @@ public class ConversorDeMoedas {
 
     private static final String API_KEY = "af2bc344c51c47f08711b38f6adb6364";
 
-    public static double converterParaReal(double Vlr_a_ser_Convertido, String fromCurrency) {
+    public static double converterParaReal(double ValorEmReal, String MoedaConversao) {
         try {
             // Fazer uma solicitação HTTP para obter as taxas de câmbio em relação ao Real
-            String apiUrl = "https://openexchangerates.org/api/latest.json?app_id=" + API_KEY;
+            String apiUrl = "https://openexchangerates.org/api/latest.json?app_id=af2bc344c51c47f08711b38f6adb6364&base=BRL";
             HttpURLConnection connection = (HttpURLConnection) new URL(apiUrl).openConnection();
             connection.setRequestMethod("GET");
 
@@ -37,13 +37,13 @@ public class ConversorDeMoedas {
             JsonNode rates = jsonResponse.get("rates");
 
             // Obter a taxa de câmbio da moeda de origem para o Real
-            double Vlr_Real = rates.get("BRL").asDouble();
+            double valorMoeda = rates.get(MoedaConversao).asDouble();
 
             // Realizar a conversão
 
-            return Vlr_a_ser_Convertido * Vlr_Real;
-        } catch (IOException erro) {
-            erro.printStackTrace();
+            return ValorEmReal * valorMoeda;
+        } catch (IOException e) {
+            e.printStackTrace();
             return -1.0; // retorna -1.0 para indicar o erro
         }
     }
