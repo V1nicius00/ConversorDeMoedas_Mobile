@@ -1,6 +1,7 @@
 package com.example.conversordemoedas;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -44,8 +45,12 @@ public class tela2_activity extends Activity {
 					// Convertendo o valor para um número de ponto flutuante
 					double valorEmDouble = Double.parseDouble(txtValor);
 
+					Context ctx = getBaseContext();
+
 					// Realizando a conversão
-					final double conversao = ConversorDeMoedas.converterParaReal(valorEmDouble, tipoDeMoedaSelecionada, getApplicationContext());
+					final double conversao =
+							ConversorDeMoedas.converterParaReal(ctx
+									, valorEmDouble, tipoDeMoedaSelecionada, getApplicationContext());
 
 					runOnUiThread(new Runnable() {
 						@Override
