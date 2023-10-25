@@ -16,7 +16,6 @@ import java.net.URL;
 public class ConversorDeMoedas {
     private static final String API_KEY = "af2bc344c51c47f08711b38f6adb6364";
     private static final String TAG = "ConversorDeMoedas";
-
     public static double result;
     private static boolean checkInternetConenction(final Context ctx) {
         // get Connectivity Manager object to check connection
@@ -49,8 +48,8 @@ public class ConversorDeMoedas {
             if (checkInternetConenction(ctx)) {
                  //Verifique se a permissão INTERNET foi concedida
             if (context.checkSelfPermission(android.Manifest.permission.INTERNET) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
-                Log.e(TAG, "Permissão INTERNET não concedida. Você precisa conceder permissão para converter.");
-                return 777.0;
+                Log.e(TAG, "Permissão INTERNET não concedida");
+                return 7777777.0;
             }
 
                 // Crie uma nova Thread para a solicitação de rede
@@ -72,21 +71,16 @@ public class ConversorDeMoedas {
 
                         reader.close();
 
-                        // Analisar a resposta JSON
+                        // Analisando a resposta JSON
                         ObjectMapper objectMapper = new ObjectMapper();
                         JsonNode jsonResponse = objectMapper.readTree(response.toString());
                         JsonNode rates = jsonResponse.get("rates");
 
-                        // Obter a taxa de câmbio da moeda de origem para o Real
-
-
-
                         double valorMoeda = rates.get(MoedaConversao).asDouble(); // EUR  0.94561
                         double BRLtoUSD = rates.get("BRL").asDouble(); // BRL 4.995799
 
-
                         // Realizar a conversão
-                        //          BRL 4.995799 * EUR  0.94561
+                        //   BRL 4.995799 * EUR  0.94561
                         result = BRLtoUSD * valorMoeda;
 
                         Log.d(TAG, "Valor de conversão: " + result);
@@ -106,7 +100,7 @@ public class ConversorDeMoedas {
             // aqui
         } catch (Exception e) {
             Log.e(TAG, "Erro na função converterParaReal(): " + e.getMessage());
-            return 888.0; // Retorna -1.0 para indicar o erro
+            return -1.0; // Retorna -1.0 para indicar o erro
         } finally {
             Log.d(TAG, "Saindo da função converterParaReal()");
         }

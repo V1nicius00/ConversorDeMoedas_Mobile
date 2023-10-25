@@ -1,14 +1,13 @@
 package com.example.conversordemoedas;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import java.text.DecimalFormat;
 
 public class tela2_activity extends Activity {
@@ -16,6 +15,7 @@ public class tela2_activity extends Activity {
 	private EditText valorConverter;
 	private TextView valorConvertido;
 
+	@SuppressLint("SetTextI18n")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -23,6 +23,11 @@ public class tela2_activity extends Activity {
 
 		valorConverter = findViewById(R.id.valorConverter);
 		valorConvertido = findViewById(R.id.valorConvertido);
+		TextView nomeMoeda = findViewById ( R.id.nome_da_moeda );
+		//Titulo
+		final Intent intent = getIntent();
+		final String tipoDeMoedaSelecionada = intent.getStringExtra("tipoMoedaSelecionada");
+		nomeMoeda.setText ( tipoDeMoedaSelecionada + " para BRL" );
 	}
 
 	public void TelaConfiguracao(View v) {
@@ -35,7 +40,7 @@ public class tela2_activity extends Activity {
 		startActivity(telaHome);
 	}
 
-	public void converter(View v) {
+	public void converter( View v) {
 		final Intent intent = getIntent();
 		final String tipoDeMoedaSelecionada = intent.getStringExtra("tipoMoedaSelecionada");
 		final String txtValor = valorConverter.getText().toString();
@@ -51,27 +56,19 @@ public class tela2_activity extends Activity {
 				final double conversao =
 						ConversorDeMoedas.converterParaReal(ctx, valorEmDouble, tipoDeMoedaSelecionada, getApplicationContext());
 
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						if (conversao >= 0.0) {
-							DecimalFormat df = new DecimalFormat("#.##");
-							String valorConvertidoStr = df.format(conversao);
-							valorConvertido.setText(valorConvertidoStr + " BRL");
-							valorConverter.setText("");
-							valorConverter.findFocus();
-						} else {
-							valorConvertido.setText("erro");
-						}
+				runOnUiThread( () -> {
+					if (conversao >= 0.0) {
+						DecimalFormat df = new DecimalFormat("#.##");
+						String valorConvertidoStr = df.format(conversao);
+						valorConvertido.setText(valorConvertidoStr + " BRL");
+						valorConverter.setText("");
+						valorConverter.findFocus();
+					} else {
+						valorConvertido.setText("erro");
 					}
-				});
+				} );
 			} catch (NumberFormatException e) {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						valorConvertido.setText("Valor inválido");
-					}
-				});
+				runOnUiThread( () -> valorConvertido.setText("Valor inválido") );
 			}
 		}).start();
 	}

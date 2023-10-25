@@ -145,7 +145,7 @@
 					android:layout_height="55.8dp"
 					android:layout_gravity="center_horizontal|center"
 					android:layout_marginLeft="44dp"
-					android:layout_marginTop="365dp"
+					android:layout_marginTop="355dp"
 					android:gravity="center"
 					android:hint="..."
 					android:textColor="@color/nome_da_moeda_color"
