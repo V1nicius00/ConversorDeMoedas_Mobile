@@ -42,7 +42,7 @@ public class ConversorDeMoedas {
         return false;
     }
 
-    public static double converterParaReal(final Context ctx, final double ValorEmReal, final String MoedaConversao, final Context context) {
+    public static double converterParaReal(final Context ctx, final double Valor, final String MoedaConversao, final Context context) {
         try {
             Log.d(TAG, "Iniciando a função converterParaReal()");
 
@@ -78,14 +78,16 @@ public class ConversorDeMoedas {
                         JsonNode rates = jsonResponse.get("rates");
 
                         // Obter a taxa de câmbio da moeda de origem para o Real
-                        double valorMoeda =
-                                rates.get(MoedaConversao).asDouble(); // EUR 0.94
-                        double BRLtoUSD =
-                                rates.get("BRL").asDouble(); //0,20
 
+
+
+                        double valorMoeda = rates.get(MoedaConversao).asDouble(); // EUR
+                        double BRLtoUSD = rates.get("BRL").asDouble(); //0,20
+
+                        double valorInputUSD = Valor * BRLtoUSD;
 
                         // Realizar a conversão
-                        result = valorMoeda * BRLtoUSD;
+                        result = valorInputUSD * valorMoeda;
 
                         Log.d(TAG, "Valor de conversão: " + result);
 
