@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class tela2_activity extends Activity {
 
 	private EditText valorConverter;
@@ -38,39 +40,38 @@ public class tela2_activity extends Activity {
 		final String tipoDeMoedaSelecionada = intent.getStringExtra("tipoMoedaSelecionada");
 		final String txtValor = valorConverter.getText().toString();
 
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				try {
-					// Convertendo o valor para um número de ponto flutuante
-					double valorEmDouble = Double.parseDouble(txtValor);
+		new Thread(() -> {
+			try {
+				// Convertendo o valor para um número de ponto flutuante
+				double valorEmDouble = Double.parseDouble(txtValor);
 
-					Context ctx = getBaseContext();
+				Context ctx = getBaseContext();
 
-					// Realizando a conversão
-					final double conversao =
-							ConversorDeMoedas.converterParaReal(ctx
-									, valorEmDouble, tipoDeMoedaSelecionada, getApplicationContext());
+				// Realizando a conversão
+				final double conversao =
+						ConversorDeMoedas.converterParaReal(ctx, valorEmDouble, tipoDeMoedaSelecionada, getApplicationContext());
 
-					runOnUiThread(new Runnable() {
-						@Override
-						public void run() {
-							if (conversao >= 0.0) {
-								String valorConvertidoStr = String.valueOf(conversao);
-								valorConvertido.setText(valorConvertidoStr);
-							} else {
-								valorConvertido.setText("Erro na conversão");
-							}
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						if (conversao >= 0.0) {
+							DecimalFormat df = new DecimalFormat("#.##");
+							String valorConvertidoStr = df.format(conversao);
+							valorConvertido.setText(valorConvertidoStr + " BRL");
+							valorConverter.setText("");
+							valorConverter.findFocus();
+						} else {
+							valorConvertido.setText("erro");
 						}
-					});
-				} catch (NumberFormatException e) {
-					runOnUiThread(new Runnable() {
-						@Override
-						public void run() {
-							valorConvertido.setText("Valor inválido");
-						}
-					});
-				}
+					}
+				});
+			} catch (NumberFormatException e) {
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						valorConvertido.setText("Valor inválido");
+					}
+				});
 			}
 		}).start();
 	}
