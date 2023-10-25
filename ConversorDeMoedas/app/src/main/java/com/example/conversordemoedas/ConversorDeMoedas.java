@@ -81,13 +81,13 @@ public class ConversorDeMoedas {
 
 
 
-                        double valorMoeda = rates.get(MoedaConversao).asDouble(); // EUR
-                        double BRLtoUSD = rates.get("BRL").asDouble(); //0,20
+                        double valorMoeda = rates.get(MoedaConversao).asDouble(); // EUR  0.94561
+                        double BRLtoUSD = rates.get("BRL").asDouble(); // BRL 4.995799
 
-                        double valorInputUSD = Valor * BRLtoUSD;
 
                         // Realizar a conversão
-                        result = valorInputUSD * valorMoeda;
+                        //          BRL 4.995799 * EUR  0.94561
+                        result = BRLtoUSD * valorMoeda;
 
                         Log.d(TAG, "Valor de conversão: " + result);
 
