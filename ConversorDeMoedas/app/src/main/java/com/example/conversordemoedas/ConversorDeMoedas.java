@@ -41,7 +41,7 @@ public class ConversorDeMoedas {
         return false;
     }
 
-    public static double converterParaReal(final Context ctx, final double Valor, final String MoedaConversao, final Context context) {
+    public static double converterParaReal(final Context ctx, final double ValorInput, final String MoedaConversao, final Context context) {
         try {
             Log.d(TAG, "Iniciando a função converterParaReal()");
 
@@ -76,14 +76,15 @@ public class ConversorDeMoedas {
                         JsonNode jsonResponse = objectMapper.readTree(response.toString());
                         JsonNode rates = jsonResponse.get("rates");
 
-                        double valorMoeda = rates.get(MoedaConversao).asDouble(); // EUR  0.94561
+                        double valorMoedaEmUSD = rates.get(MoedaConversao).asDouble(); // EUR  0.94561
                         double BRLtoUSD = rates.get("BRL").asDouble(); // BRL 4.995799
 
+                        double TotalMoedaEmUSD = valorMoedaEmUSD * ValorInput;
                         // Realizar a conversão
                         //   BRL 4.995799 * EUR  0.94561
-                        result = BRLtoUSD * valorMoeda;
+                        result = BRLtoUSD * TotalMoedaEmUSD;
 
-                        Log.d(TAG, "Valor de conversão: " + result);
+                        Log.d(TAG, "ValorInput de conversão: " + result);
 
                     } catch (IOException e) {
                         Log.e(TAG,
