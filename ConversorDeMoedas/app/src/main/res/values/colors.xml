@@ -22,4 +22,18 @@
     <color name="nome_da_moeda_color">#000000</color>
     <color name="rectangle_32_color">#D9D9D9</color>
 
+    <!-- Light Mode -->
+
+    <color name="lm_corDeFundo">#FFFFFF</color>
+    <color name="lm_corDePrimeiroPlano">#FFFFFF</color>
+    <color name="lm_textoSecundario">#ACACAC</color>
+    <color name="lm_textoPrimario">#262626</color>
+
+    <!-- Dark Mode -->
+
+    <color name="dm_corDeFundo">#000000</color>
+    <color name="dm_corDePrimeiroPlano">#363636</color>
+    <color name="dm_textoSecundario">#A7A6A6</color>
+    <color name="dm_textoPrimario">#EEEEEE</color>
+
 </resources>

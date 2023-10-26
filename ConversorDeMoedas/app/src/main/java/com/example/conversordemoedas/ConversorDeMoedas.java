@@ -41,7 +41,8 @@ public class ConversorDeMoedas {
         return false;
     }
 
-    public static double converterParaReal(final Context ctx, final double ValorInput, final String MoedaConversao, final Context context) {
+    public static double converterParaReal(
+            final Context ctx, final double ValorInput, final String MoedaConversao, final Context context) {
         try {
             Log.d(TAG, "Iniciando a função converterParaReal()");
 

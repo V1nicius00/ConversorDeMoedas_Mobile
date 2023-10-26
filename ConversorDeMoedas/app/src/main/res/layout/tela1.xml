@@ -1,5 +1,6 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
+	style="@style/BACKGROUND"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent" android:layout_height="wrap_content" >
 
@@ -7,7 +8,7 @@
 		android:layout_width="wrap_content" 
 		android:layout_height="match_parent" >
 
-		<RelativeLayout android:id="@+id/content_container" 
+		<RelativeLayout android:id="@+id/content_container"
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" >
 
@@ -21,24 +22,25 @@
 				>
 
 				<View
+					style="@style/BACKGROUND"
 					android:id="@+id/_bg__tela1_ek2"
 					android:layout_width="360dp"
 					android:layout_height="640dp"
 					android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:background="@drawable/_bg__tela1_ek2_shape" />
+					android:layout_marginTop="0dp" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/conversor_de_moedas"
 					android:layout_width="276dp"
 					android:layout_height="35dp"
 					android:layout_marginStart="40dp"
 					android:layout_marginTop="7.52dp"
 					android:text="@string/app_name"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="28sp" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/moedas_mais_populares_"
 					android:layout_width="220dp"
 					android:layout_height="25dp"
@@ -47,12 +49,12 @@
 					android:layout_marginTop="56dp"
 					android:gravity="center"
 					android:text="@string/moedas_mais_populares__string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="18sp" />
 
-				<View   android:id="@+id/rectangle_15"
-					android:background="@drawable/rectangle_15_shape"
-					 android:layout_marginStart="23dp"
+				<View
+					style="@style/BOTAO"
+					android:id="@+id/rectangle_15"
+					android:layout_marginStart="23dp"
 					android:layout_marginTop="89dp"
 					android:layout_width="306dp"
 					android:layout_height="58dp" />
@@ -66,27 +68,28 @@
 					android:layout_height="48dp" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/usd"
 					android:layout_width="110dp"
 					android:layout_height="30dp"
 					android:layout_marginStart="136dp"
 					android:layout_marginTop="105dp"
 					android:text="@string/usd_string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="24sp" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/valorDolar"
 					android:layout_width="80dp"
 					android:layout_height="32dp"
 					android:layout_marginStart="226dp"
 					android:layout_marginTop="105dp"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="24sp" />
 
-				<View   android:id="@+id/rectangle_17"
-					android:background="@drawable/rectangle_17_shape"
-					 android:layout_marginStart="23dp"
+				<View
+					style="@style/BOTAO"
+					android:id="@+id/rectangle_17"
+					android:layout_marginStart="23dp"
 					android:layout_marginTop="219dp"
 					android:layout_width="306dp"
 					android:layout_height="58dp" />
@@ -100,40 +103,40 @@
 					app:srcCompat="@drawable/gbp" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/gbp"
 					android:layout_width="110dp"
 					android:layout_height="30dp"
 					android:layout_marginStart="136dp"
 					android:layout_marginTop="235dp"
 					android:text="@string/gbp_string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="24sp" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/valorLibra"
 					android:layout_width="80dp"
 					android:layout_height="32dp"
 					android:layout_marginStart="226dp"
 					android:layout_marginTop="235dp"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="24sp" />
 
 				<View
+					style="@style/BOTAO"
 					android:id="@+id/rectangle_16"
 					android:layout_width="306dp"
 					android:layout_height="58dp"
 					android:layout_marginStart="23dp"
-					android:layout_marginTop="154dp"
-					android:background="@drawable/rectangle_16_shape" />
+					android:layout_marginTop="154dp" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/eur"
 					android:layout_width="110dp"
 					android:layout_height="30dp"
 					android:layout_marginStart="136dp"
 					android:layout_marginTop="170dp"
 					android:text="@string/eur_string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="24sp" />
 
 				<ImageView
@@ -146,15 +149,16 @@
 					android:contentDescription="Bandeiro Euro" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/valorEuro"
 					android:layout_width="80dp"
 					android:layout_height="32dp"
 					android:layout_marginStart="226dp"
 					android:layout_marginTop="170dp"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="24sp" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/selecione_a_moeda_que_deseja_converter"
 					android:layout_width="252dp"
 					android:layout_height="46.8dp"
@@ -163,19 +167,19 @@
 					android:layout_marginTop="285dp"
 					android:gravity="center"
 					android:text="@string/selecione_a_moeda_que_deseja_converter_string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="18sp" />
 
 				<View
+					style="@style/BOTAO"
 					android:id="@+id/btnUSD"
 					android:layout_width="157dp"
 					android:layout_height="55dp"
 					android:layout_marginStart="19dp"
 					android:layout_marginTop="345dp"
-					android:background="@drawable/rectangle_22_shape"
 					android:onClick="TelaConversao" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/txtUSD"
 					android:layout_width="150dp"
 					android:layout_height="42dp"
@@ -184,19 +188,19 @@
 					android:layout_marginTop="352dp"
 					android:gravity="center"
 					android:text="@string/d_lar_americano__usd__string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="17.16sp" />
 
 				<View
+					style="@style/BOTAO"
 					android:id="@+id/btnEURO"
 					android:layout_width="157dp"
 					android:layout_height="55dp"
 					android:layout_marginStart="191dp"
 					android:layout_marginTop="345dp"
-					android:background="@drawable/rectangle_23_shape"
 					android:onClick="TelaConversao" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/txtEURO"
 					android:layout_width="100dp"
 					android:layout_height="35dp"
@@ -205,19 +209,19 @@
 					android:layout_marginTop="352dp"
 					android:gravity="center"
 					android:text="@string/euro__eur__string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="17.16sp" />
 
 				<View
+					style="@style/BOTAO"
 					android:id="@+id/btnYENE"
 					android:layout_width="157dp"
 					android:layout_height="55dp"
 					android:layout_marginStart="19dp"
 					android:layout_marginTop="407dp"
-					android:background="@drawable/rectangle_24_shape"
 					android:onClick="TelaConversao" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/txtYENE"
 					android:layout_width="100dp"
 					android:layout_height="34dp"
@@ -226,19 +230,19 @@
 					android:layout_marginTop="414dp"
 					android:gravity="center"
 					android:text="@string/yene__jpy__string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="17.16sp" />
 
 				<View
+					style="@style/BOTAO"
 					android:id="@+id/btnLIBRA"
 					android:layout_width="157dp"
 					android:layout_height="55dp"
 					android:layout_marginStart="191dp"
 					android:layout_marginTop="407dp"
-					android:background="@drawable/rectangle_25_shape"
 					android:onClick="TelaConversao" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/txtLIBRA"
 					android:layout_width="155dp"
 					android:layout_height="40dp"
@@ -247,19 +251,19 @@
 					android:layout_marginTop="414dp"
 					android:gravity="center"
 					android:text="@string/libra_esterlina__gbp__string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="17.16sp" />
 
 				<View
+					style="@style/BOTAO"
 					android:id="@+id/btnAUSTRALIANO"
 					android:layout_width="157dp"
 					android:layout_height="55dp"
 					android:layout_marginStart="19dp"
 					android:layout_marginTop="469dp"
-					android:background="@drawable/rectangle_26_shape"
 					android:onClick="TelaConversao" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/txtAUSTRALIANO"
 					android:layout_width="140dp"
 					android:layout_height="40dp"
@@ -268,19 +272,19 @@
 					android:layout_marginTop="476dp"
 					android:gravity="center"
 					android:text="@string/d_lar_australiano__aud_nzd__string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="17.16sp" />
 
 				<View
+					style="@style/BOTAO"
 					android:id="@+id/btnCANADENSE"
 					android:layout_width="157dp"
 					android:layout_height="55dp"
 					android:layout_marginStart="191dp"
 					android:layout_marginTop="469dp"
-					android:background="@drawable/rectangle_27_shape"
 					android:onClick="TelaConversao" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/txtCANADENSE"
 					android:layout_width="140dp"
 					android:layout_height="40dp"
@@ -289,19 +293,19 @@
 					android:layout_marginTop="476dp"
 					android:gravity="center"
 					android:text="@string/d_lar_canadense__cad__string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="17.16sp" />
 
 				<View
+					style="@style/BOTAO"
 					android:id="@+id/btnYUAN"
 					android:layout_width="157dp"
 					android:layout_height="55dp"
 					android:layout_marginStart="19dp"
 					android:layout_marginTop="531dp"
-					android:background="@drawable/rectangle_28_shape"
 					android:onClick="TelaConversao" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/txtYUAN"
 					android:layout_width="100dp"
 					android:layout_height="34dp"
@@ -310,19 +314,19 @@
 					android:layout_marginTop="542dp"
 					android:gravity="center"
 					android:text="@string/yuan__cny__string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="17.16sp" />
 
 				<View
+					style="@style/BOTAO"
 					android:id="@+id/btnPESO"
 					android:layout_width="157dp"
 					android:layout_height="55dp"
 					android:layout_marginStart="191dp"
 					android:layout_marginTop="531dp"
-					android:background="@drawable/rectangle_29_shape"
 					android:onClick="TelaConversao" />
 
 				<TextView
+					style="@style/TEXT"
 					android:id="@+id/txtPESO"
 					android:layout_width="140dp"
 					android:layout_height="40dp"
@@ -331,7 +335,6 @@
 					android:layout_marginTop="538dp"
 					android:gravity="center"
 					android:text="@string/peso_argentino__ars__string"
-					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="17.16sp" />
 
 				<ImageView
