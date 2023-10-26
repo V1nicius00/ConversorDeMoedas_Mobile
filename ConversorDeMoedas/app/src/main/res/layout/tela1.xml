@@ -67,7 +67,7 @@
 
 				<TextView
 					android:id="@+id/usd"
-					android:layout_width="55dp"
+					android:layout_width="110dp"
 					android:layout_height="30dp"
 					android:layout_marginStart="136dp"
 					android:layout_marginTop="105dp"
@@ -81,7 +81,6 @@
 					android:layout_height="32dp"
 					android:layout_marginStart="226dp"
 					android:layout_marginTop="105dp"
-					android:text="@string/r_4_99_string"
 					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="24sp" />
 
@@ -102,7 +101,7 @@
 
 				<TextView
 					android:id="@+id/gbp"
-					android:layout_width="55dp"
+					android:layout_width="110dp"
 					android:layout_height="30dp"
 					android:layout_marginStart="136dp"
 					android:layout_marginTop="235dp"
@@ -116,7 +115,6 @@
 					android:layout_height="32dp"
 					android:layout_marginStart="226dp"
 					android:layout_marginTop="235dp"
-					android:text="@string/r_6_35_string"
 					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="24sp" />
 
@@ -130,7 +128,7 @@
 
 				<TextView
 					android:id="@+id/eur"
-					android:layout_width="55dp"
+					android:layout_width="110dp"
 					android:layout_height="30dp"
 					android:layout_marginStart="136dp"
 					android:layout_marginTop="170dp"
@@ -153,7 +151,6 @@
 					android:layout_height="32dp"
 					android:layout_marginStart="226dp"
 					android:layout_marginTop="170dp"
-					android:text="@string/r_5_34_string"
 					android:textColor="@color/conversor_de_moedas_color"
 					android:textSize="24sp" />
 

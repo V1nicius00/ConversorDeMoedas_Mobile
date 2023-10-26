@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Conversor De Moedas</string>
     <string name="moedas_mais_populares__string">Moedas mais populares:</string>
-    <string name="usd_string">USD</string>
+    <string name="usd_string">USD    R$</string>
     <string name="r_4_99_string">R$4,99</string>
-    <string name="gbp_string">GBP</string>
+    <string name="gbp_string">GBP    R$</string>
     <string name="r_6_35_string">R$6,35</string>
-    <string name="eur_string">EUR</string>
+    <string name="eur_string">EUR    R$</string>
     <string name="r_5_34_string">R$5,34</string>
     <string name="selecione_a_moeda_que_deseja_converter_string">Selecione a moeda que deseja converter</string>
     <string name="d_lar_americano__usd__string">Dolar Americano (USD)</string>

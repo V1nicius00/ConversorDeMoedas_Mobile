@@ -1,17 +1,53 @@
 package com.example.conversordemoedas;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+import java.text.DecimalFormat;
 
 public class tela1_activity extends Activity {
+
+	private TextView valorDolar;
+	private TextView valorLibra;
+	private  TextView valorEuro;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.tela1);
+
+		valorDolar = (TextView) findViewById(R.id.valorDolar);
+		valorLibra = (TextView) findViewById(R.id.valorLibra);
+		valorEuro = (TextView) findViewById(R.id.valorEuro);
+		Context ctx = getBaseContext();
+
+		// Realizando a conversão
+		final double conversaoUSD =	ConversorDeMoedas.converterParaReal(ctx, 1,"USD", getApplicationContext());
+		final double conversaoEUR =	ConversorDeMoedas.converterParaReal(ctx, 1,"EUR", getApplicationContext());
+		final double conversaoGBP =	ConversorDeMoedas.converterParaReal(ctx, 1,"GBP", getApplicationContext());
+
+		DecimalFormat df = new DecimalFormat("#.##");
+
+		String valorConvertidoUSD =	df.format(conversaoUSD);
+		Log.d("conversão","Valor USD convertido: "+ valorConvertidoUSD);
+
+		String valorConvertidoEUR =	df.format(conversaoEUR);
+		Log.d("conversão","Valor EUR convertido: "+ valorConvertidoEUR);
+
+		String valorConvertidoGBP =	df.format(conversaoGBP);
+		Log.d("conversão","Valor GBP convertido: "+ valorConvertidoGBP);
+
+		valorDolar.setText(valorConvertidoUSD);
+		valorEuro.setText(valorConvertidoEUR);
+		valorLibra.setText(valorConvertidoGBP);
 	}
 
 	public void TelaConfiguracao(View v) {
@@ -60,4 +96,5 @@ public class tela1_activity extends Activity {
 		telaConversao.putExtra("tipoMoedaSelecionada", tipoMoedaSelecionada);
 		startActivity(telaConversao);
 	}
+
 }
