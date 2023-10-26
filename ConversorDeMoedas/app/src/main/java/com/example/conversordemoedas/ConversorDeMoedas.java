@@ -85,7 +85,7 @@ public class ConversorDeMoedas {
                         Log.d(TAG,
                                 "Valor do BRL para USD: " + BRLtoUSD);
 
-                        double tot = ValorInput * valorMoedaEmUSD;
+                        double tot = ValorInput / valorMoedaEmUSD;
                         Log.d(TAG,
                                 "Valor tot: " + tot);
                         result = tot * BRLtoUSD;
