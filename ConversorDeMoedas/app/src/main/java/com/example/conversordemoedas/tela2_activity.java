@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import java.text.DecimalFormat;
@@ -63,6 +64,10 @@ public class tela2_activity extends Activity {
 						valorConvertido.setText(valorConvertidoStr + " BRL");
 						valorConverter.setText("");
 						valorConverter.findFocus();
+						InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+						// Isso ocultará o teclado virtual
+						imm.hideSoftInputFromWindow(valorConverter.getWindowToken(), 0);
+
 					} else {
 						valorConvertido.setText("erro");
 					}
