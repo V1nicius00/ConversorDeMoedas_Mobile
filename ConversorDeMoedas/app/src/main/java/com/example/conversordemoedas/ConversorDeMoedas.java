@@ -76,13 +76,24 @@ public class ConversorDeMoedas {
                         JsonNode jsonResponse = objectMapper.readTree(response.toString());
                         JsonNode rates = jsonResponse.get("rates");
 
-                        double valorMoedaEmUSD = rates.get(MoedaConversao).asDouble(); // EUR  0.94561
+                        double valorMoedaEmUSD =
+                                rates.get(MoedaConversao).asDouble(); // EUR  0.94561
+                        Log.d(TAG,
+                                "Valor da moeda em USD: " + valorMoedaEmUSD);
                         double BRLtoUSD = rates.get("BRL").asDouble(); // BRL 4.995799
 
-                        double TotalMoedaEmUSD = valorMoedaEmUSD * ValorInput;
-                        // Realizar a conversão
-                        //   BRL 4.995799 * EUR  0.94561
-                        result = BRLtoUSD * TotalMoedaEmUSD;
+                        Log.d(TAG,
+                                "Valor do BRL para USD: " + BRLtoUSD);
+
+                        double tot = ValorInput * valorMoedaEmUSD;
+                        Log.d(TAG,
+                                "Valor tot: " + tot);
+                        result = tot * BRLtoUSD;
+
+                        Log.d(TAG,
+                                "Valor result: " + result);
+
+
 
                         Log.d(TAG, "ValorInput de conversão: " + result);
 
