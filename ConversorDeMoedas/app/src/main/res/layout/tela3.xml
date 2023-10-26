@@ -1,50 +1,38 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent" android:layout_height="wrap_content" >
-	<!-- 
-	/*
-	 *	This content is generated from the API File Info.
-	 *	(Alt+Shift+Ctrl+I).
-	 *
-	 *	@desc 		
-	 *	@file 		tela3
-	 *	@date 		Tuesday 17th of October 2023 11:53:29 AM
-	 *	@title 		Page 3
-	 *	@author 	
-	 *	@keywords 	
-	 *	@generator 	Export Kit v1.3.figma
-	 *
-	 */
-	-->
+
 	<ScrollView android:id="@+id/tela3" 
 		android:layout_width="wrap_content" 
 		android:layout_height="match_parent" >
 
-		<RelativeLayout android:id="@+id/content_container" 
+		<RelativeLayout
+			android:id="@+id/content_container"
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" >
 
-
-
-			<RelativeLayout android:id="@+id/page_tela3_ek1"
+			<RelativeLayout
+				style="@style/BACKGROUND"
+				android:id="@+id/page_tela3_ek1"
 				android:layout_marginTop="0dp"
 				android:layout_marginStart="0dp"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				>
+				android:layout_height="wrap_content">
 
-				<View   android:id="@+id/_bg__tela3_ek2"
-					android:background="@drawable/_bg__tela3_ek2_shape"
-					 android:layout_marginStart="0dp"
+				<View
+					style="@style/BACKGROUND"
+					android:id="@+id/_bg__tela3_ek2"
+					android:layout_marginStart="0dp"
 					android:layout_marginTop="0dp"
 					android:layout_width="360dp"
 					android:layout_height="640dp" />
 
-				<TextView android:id="@+id/configura__es"
+				<TextView
+					style="@style/TEXT"
+					android:id="@+id/configura__es"
 					android:layout_gravity="center_horizontal|center"
 					android:gravity="center"
 					android:textSize="28sp"
-					android:textColor="@color/configura__es_color"
-					android:layout_marginLeft="13.52dp"
+					android:layout_marginStart="13.52dp"
 					android:layout_marginTop="10.52dp"
 					android:layout_width="330dp"
 					android:layout_height="56.8dp"
@@ -61,62 +49,66 @@
 					android:onClick="IrParaHome"
 					android:src="@drawable/home" />
 
-				<TextView android:id="@+id/idioma"
+				<TextView
+					style="@style/TEXT"
+					android:id="@+id/idioma"
 					android:layout_gravity="center_horizontal|center"
 					android:gravity="center"
 					android:textSize="38sp"
-					android:textColor="@color/configura__es_color"
-					android:layout_marginLeft="13dp"
+					android:layout_marginStart="13dp"
 					android:layout_marginTop="103dp"
 					android:layout_width="146dp"
 					android:layout_height="53.8dp"
 					android:text="@string/idioma_string"
 					 />
 
-				<View   android:id="@+id/rectangle_30"
-					android:background="@drawable/rectangle_30_shape"
-					 android:layout_marginStart="7dp"
+				<View
+					style="@style/BOTAO"
+					android:id="@+id/rectangle_30"
+					android:layout_marginStart="7dp"
 					android:layout_marginTop="152dp"
 					android:layout_width="334dp"
 					android:layout_height="55dp" />
 
-				<TextView android:id="@+id/tema"
+				<TextView
+					style="@style/TEXT"
+					android:id="@+id/tema"
 					android:layout_gravity="center_horizontal|center"
 					android:gravity="center"
 					android:textSize="38sp"
-					android:textColor="@color/configura__es_color"
-					android:layout_marginLeft="13dp"
+					android:layout_marginStart="13dp"
 					android:layout_marginTop="240dp"
 					android:layout_width="117dp"
 					android:layout_height="55.8dp"
-					android:text="@string/tema_string"
-					 />
+					android:text="@string/tema_string"	 />
 
-				<View   android:id="@+id/rectangle_31"
-					android:background="@drawable/rectangle_31_shape"
-					 android:layout_marginStart="7dp"
+				<View
+					style="@style/BOTAO"
+					android:id="@+id/rectangle_31"
+					android:layout_marginStart="7dp"
 					android:layout_marginTop="289dp"
 					android:layout_width="334dp"
 					android:layout_height="55dp" />
 
-				<TextView android:id="@+id/portugu_s___br"
+				<TextView
+					style="@style/TEXT"
+					android:id="@+id/portugu_s___br"
 					android:layout_gravity="center_horizontal|center"
 					android:gravity="center"
 					android:textSize="30sp"
-					android:textColor="@color/configura__es_color"
-					android:layout_marginLeft="14dp"
+					android:layout_marginStart="14dp"
 					android:layout_marginTop="161dp"
 					android:layout_width="240dp"
 					android:layout_height="45dp"
-					android:text="@string/portugu_s___br_string"
-					 />
+					android:text="@string/portugu_s___br_string" />
 
-				<TextView android:id="@+id/escuro"
+				<TextView
+					style="@style/TEXT"
+					android:id="@+id/escuro"
 					android:layout_gravity="center_horizontal|center"
 					android:gravity="center"
 					android:textSize="30sp"
-					android:textColor="@color/configura__es_color"
-					android:layout_marginLeft="11dp"
+					android:layout_marginStart="11dp"
 					android:layout_marginTop="297dp"
 					android:layout_width="136dp"
 					android:layout_height="43dp"
@@ -128,7 +120,8 @@
 					android:layout_width="50dp"
 					android:layout_height="30dp"
 					android:layout_marginStart="280dp"
-					android:layout_marginTop="301dp" />
+					android:layout_marginTop="301dp"
+					tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 			</RelativeLayout>
 		</RelativeLayout>
