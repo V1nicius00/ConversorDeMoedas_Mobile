@@ -50,17 +50,16 @@
 					android:src="@drawable/home" />
 
 				<TextView
-					style="@style/TEXT"
 					android:id="@+id/idioma"
+					style="@style/TEXT"
+					android:layout_width="268dp"
+					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal|center"
-					android:gravity="center"
-					android:textSize="38sp"
 					android:layout_marginStart="13dp"
 					android:layout_marginTop="103dp"
-					android:layout_width="146dp"
-					android:layout_height="53.8dp"
+					android:gravity="center"
 					android:text="@string/idioma_string"
-					 />
+					android:textSize="38sp" />
 
 				<View
 					style="@style/BOTAO"
@@ -71,16 +70,16 @@
 					android:layout_height="55dp" />
 
 				<TextView
-					style="@style/TEXT"
 					android:id="@+id/tema"
+					style="@style/TEXT"
+					android:layout_width="268dp"
+					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal|center"
-					android:gravity="center"
-					android:textSize="38sp"
 					android:layout_marginStart="13dp"
 					android:layout_marginTop="240dp"
-					android:layout_width="117dp"
-					android:layout_height="55.8dp"
-					android:text="@string/tema_string"	 />
+					android:gravity="center"
+					android:text="@string/tema_string"
+					android:textSize="38sp" />
 
 				<View
 					style="@style/BOTAO"
