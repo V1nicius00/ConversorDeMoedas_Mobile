@@ -59,9 +59,9 @@ import java.util.Locale;
 						String selectedLanguage = parentView.getItemAtPosition(position).toString();
 
 						// Defina o idioma do aplicativo com base na seleção
-						if ("Inglês".equals(selectedLanguage)) {
+						if ("English".equals(selectedLanguage)) {
 							setLocale("en"); // Chame uma função para atualizar o idioma para inglês
-						} else if ("Espanhol".equals(selectedLanguage)) {
+						} else if ("Español".equals(selectedLanguage)) {
 							setLocale("es"); // Chame uma função para atualizar o idioma para espanhol
 						}
 
@@ -94,4 +94,4 @@ import java.util.Locale;
 				startActivity(telaHome);
 			}
 		}
-		
+
