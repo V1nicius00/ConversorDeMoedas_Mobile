@@ -55,7 +55,7 @@
 					android:layout_width="268dp"
 					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal|center"
-					android:layout_marginStart="13dp"
+					android:layout_marginStart="30dp"
 					android:layout_marginTop="103dp"
 					android:gravity="center"
 					android:text="@string/idioma_string"
@@ -75,7 +75,7 @@
 					android:layout_width="268dp"
 					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal|center"
-					android:layout_marginStart="13dp"
+					android:layout_marginStart="30dp"
 					android:layout_marginTop="240dp"
 					android:gravity="center"
 					android:text="@string/tema_string"
@@ -89,17 +89,15 @@
 					android:layout_width="334dp"
 					android:layout_height="55dp" />
 
-				<TextView
-					style="@style/TEXT"
-					android:id="@+id/portugu_s___br"
-					android:layout_gravity="center_horizontal|center"
-					android:gravity="center"
-					android:textSize="30sp"
+
+				<Spinner
+					android:id="@+id/languageSpinner"
+					android:entries="@array/languages"
 					android:layout_marginStart="14dp"
-					android:layout_marginTop="161dp"
-					android:layout_width="240dp"
+					android:layout_marginTop="158dp"
+					android:layout_width="320dp"
 					android:layout_height="45dp"
-					android:text="@string/portugu_s___br_string" />
+					android:layout_gravity="center_horizontal|center" />
 
 				<TextView
 					style="@style/TEXT"
@@ -108,7 +106,7 @@
 					android:gravity="center"
 					android:textSize="30sp"
 					android:layout_marginStart="11dp"
-					android:layout_marginTop="297dp"
+					android:layout_marginTop="293dp"
 					android:layout_width="136dp"
 					android:layout_height="43dp"
 					android:text="@string/escuro_string"
