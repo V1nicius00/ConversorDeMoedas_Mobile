@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Dark" parent="Theme.AppCompat">
+    <style name="ThemeDark" parent="Theme.AppCompat">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/dm_textoSecundario</item>
         <!-- Define a cor primária do aplicativo, usada para a barra de ação e outros elementos principais. Neste caso, é a cor roxa com tonalidade 200. -->

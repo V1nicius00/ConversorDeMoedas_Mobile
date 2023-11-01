@@ -6,13 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatDelegate;
 
 import org.w3c.dom.Text;
 
 import java.text.DecimalFormat;
 
-public class tela1_activity extends Activity {
+public class tela1_activity extends MyAppCompatActivity {
 
 	private TextView valorDolar;
 	private TextView valorLibra;
